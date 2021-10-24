@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    /* border: 1px solid lightgreen; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b4b4b;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero,
+section {
+    padding: 70px 20px;
+}
+
+
+button {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-color: #3882F6;
+}
+
+header, 
+.hero, 
+footer {
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+header nav {
+    margin: 0px auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 0 60px 20px;
+    }
+
+    header nav ul {
+        flex: 0 0 auto;
+        padding: 0;
+    }
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9F1F8;
+}
+
+header a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .hero-left {
+        padding: 20px;
+    }
+
+    .hero-left,
+    .img {
+        flex: 0 0 auto;
+    }
+
+}
+
+.hero-left {
+    flex: 1 1 0;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.img {
+    flex: 1 1 0;
+    background-color: grey;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+
+.hero button {
+    background-color: #3882F6;
+    color: white;
+    margin: 20px 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.information {
+    text-align: center;
+}
+
+.information h2 {
+    margin: 30px auto;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.info-container {
+    margin: 0px auto 60px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-img {
+    border: #3882F6 3px solid;
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.info-card {
+    width: 150px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote blockquote {
+    max-width: 900px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1F2937;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .quote {
+        padding: 30px;
+    }
+    
+    .quote blockquote {
+        font-size: 24px;
+    }
+}
+
+.quote cite {
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+
+.action {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.action-modal {
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    gap: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .action-modal {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: flex-start;
+        width: 100%;
+        gap: 20px;
+        padding: 30px;
+    }
+}
+
+.action h3 {
+    color: #F9FAF8;
+}
+
+.action p {
+    color: #E5E7EB;
+}
+
+.action button {
+    border: white 2px solid;
+    color: white;
+    background-color: transparent;
+    flex: 0 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: auto;
+}
+
+footer a {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
